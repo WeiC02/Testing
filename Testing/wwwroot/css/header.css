@@ -1,0 +1,45 @@
+﻿.custom-navbar {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Animated Underline Effect */
+.animated-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.animated-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+.animated-underline:hover {
+    color: #f8d210;
+}
+
